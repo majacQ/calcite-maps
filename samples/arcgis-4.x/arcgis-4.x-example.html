@@ -8,6 +8,17 @@
   <title>ArcGIS JS v4, Calcite Maps and Bootstrap Example</title>
 
   <!-- Calcite Maps Bootstrap -->
+  <<<<<<< als-v0.8-js-4.9
+  <link rel="stylesheet" href="https://esri.github.io/calcite-maps/dist/css/calcite-maps-bootstrap.min-v0.9.css">
+  <!--link rel="stylesheet" href="http://localhost/GitHub/calcite-maps/dist/css/calcite-maps-bootstrap.min-v0.9.css"-->
+  
+  <!-- Calcite Maps -->
+  <link rel="stylesheet" href="https://esri.github.io/calcite-maps/dist/css/calcite-maps-arcgis-4.x.min-v0.9.css">
+  <!--link rel="stylesheet" href="http://localhost/GitHub/calcite-maps/dist/css/calcite-maps-arcgis-4.x.min-v0.9.css"-->
+
+  <!-- ArcGIS JS 4 -->
+  <link rel="stylesheet" href="https://js.arcgis.com/4.9/esri/css/main.css">
+  =======
   <link rel="stylesheet" href="https://esri.github.io/calcite-maps/dist/css/calcite-maps-bootstrap.min-v0.10.css">
   <!--link rel="stylesheet" href="http://localhost/GitHub/calcite-maps/dist/css/calcite-maps-bootstrap.min-v0.10.css"-->
   
@@ -17,6 +28,7 @@
 
   <!-- ArcGIS JS 4 -->
   <link rel="stylesheet" href="https://js.arcgis.com/4.10/esri/css/main.css">
+  >>>>>>> als-v0.8-js-4.8
 
   <style>
     html,
@@ -132,7 +144,11 @@
   </script>
 
   <!-- ArcGIS JS 4 -->
+  <<<<<<< als-v0.8-js-4.9
+  <script src="https://js.arcgis.com/4.9/"></script>
+  =======
   <script src="https://js.arcgis.com/4.10/"></script>
+  >>>>>>> als-v0.8-js-4.8
 
   <script>
     
@@ -156,10 +172,17 @@
       "bootstrap/Dropdown",
 
       // Calcite Maps
+  <<<<<<< als-v0.8-js-4.9
+      "calcite-maps/calcitemaps-v0.9",
+      
+      // Calcite Maps ArcGIS Support
+      "calcite-maps/calcitemaps-arcgis-support-v0.9",
+  =======
       "calcite-maps/calcitemaps-v0.10",
       
       // Calcite Maps ArcGIS Support
       "calcite-maps/calcitemaps-arcgis-support-v0.10",
+  >>>>>>> als-v0.8-js-4.8
 
       "dojo/domReady!"
     ], function(WebMap, MapView, Home, Zoom, Compass, Search, Legend, BasemapToggle, ScaleBar, Attribution,Collapse, Dropdown, CalciteMaps, CalciteMapArcGISSupport) {
