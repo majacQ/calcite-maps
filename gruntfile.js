@@ -22,6 +22,7 @@ module.exports = function (grunt) {
 			},
 			expanded: {
 				files: {
+  <<<<<<< als-v0.8-js-4.9
 					'dist/css/calcite-maps-bootstrap-v0.9.css': 'lib/sass/build-calcite-maps-bootstrap.scss',
 					'dist/css/calcite-maps-v0.9.css': 'lib/sass/build-calcite-maps.scss',
 					'dist/css/layouts/inline-zoom-v0.9.css': 'lib/sass/layouts/inline-zoom.scss',
@@ -30,6 +31,16 @@ module.exports = function (grunt) {
 					'dist/css/support/arcgis-3.x-v0.9.css': 'lib/sass/support/arcgis-3.x.scss',
 					'dist/css/support/arcgis-4.x-v0.9.css': 'lib/sass/support/arcgis-4.x.scss',
 					'dist/css/support/esri-leaflet-v0.9.css': 'lib/sass/support/esri-leaflet.scss'
+  =======
+					'dist/css/calcite-maps-bootstrap-v0.10.css': 'lib/sass/build-calcite-maps-bootstrap.scss',
+					'dist/css/calcite-maps-v0.10.css': 'lib/sass/build-calcite-maps.scss',
+					'dist/css/layouts/inline-zoom-v0.10.css': 'lib/sass/layouts/inline-zoom.scss',
+					'dist/css/layouts/large-title-v0.10.css': 'lib/sass/layouts/large-title.scss',
+					'dist/css/layouts/small-title-v0.10.css': 'lib/sass/layouts/small-title.scss',
+					'dist/css/support/arcgis-3.x-v0.10.css': 'lib/sass/support/arcgis-3.x.scss',
+					'dist/css/support/arcgis-4.x-v0.10.css': 'lib/sass/support/arcgis-4.x.scss',
+					'dist/css/support/esri-leaflet-v0.10.css': 'lib/sass/support/esri-leaflet.scss'
+  >>>>>>> als-v0.8-js-4.8
 				}
 			}
 		}, 
@@ -41,11 +52,19 @@ module.exports = function (grunt) {
 					banner: banner
 				},
 				files: {
+  <<<<<<< als-v0.8-js-4.9
 					'dist/css/calcite-maps.min-v0.9.css': ['dist/css/calcite-maps-v0.9.css'],
 					'dist/css/calcite-maps-bootstrap.min-v0.9.css': ['dist/css/calcite-maps-bootstrap-v0.9.css'],
 					'dist/css/calcite-maps-arcgis-3.x.min-v0.9.css': ['dist/css/calcite-maps-v0.9.css', 'dist/css/layouts/inline-zoom-v0.9.css', 'dist/css/layouts/large-title-v0.9.css', 'dist/css/layouts/small-title-v0.9.css', 'dist/css/support/arcgis-3.x-v0.9.css'],
 					'dist/css/calcite-maps-arcgis-4.x.min-v0.9.css': ['dist/css/calcite-maps-v0.9.css', 'dist/css/layouts/inline-zoom-v0.9.css', 'dist/css/layouts/large-title-v0.9.css', 'dist/css/layouts/small-title-v0.9.css','dist/css/support/arcgis-4.x-v0.9.css'],
 					'dist/css/calcite-maps-esri-leaflet.min-v0.9.css': ['dist/css/calcite-maps-v0.9.css', 'dist/css/layouts/inline-zoom-v0.9.css', 'dist/css/layouts/large-title-v0.9.css', 'dist/css/layouts/small-title-v0.9.css', 'dist/css/support/esri-leaflet-v0.9.css']
+  =======
+					'dist/css/calcite-maps.min-v0.10.css': ['dist/css/calcite-maps-v0.10.css'],
+					'dist/css/calcite-maps-bootstrap.min-v0.10.css': ['dist/css/calcite-maps-bootstrap-v0.10.css'],
+					'dist/css/calcite-maps-arcgis-3.x.min-v0.10.css': ['dist/css/calcite-maps-v0.10.css', 'dist/css/layouts/inline-zoom-v0.10.css', 'dist/css/layouts/large-title-v0.10.css', 'dist/css/layouts/small-title-v0.10.css', 'dist/css/support/arcgis-3.x-v0.10.css'],
+					'dist/css/calcite-maps-arcgis-4.x.min-v0.10.css': ['dist/css/calcite-maps-v0.10.css', 'dist/css/layouts/inline-zoom-v0.10.css', 'dist/css/layouts/large-title-v0.10.css', 'dist/css/layouts/small-title-v0.10.css','dist/css/support/arcgis-4.x-v0.10.css'],
+					'dist/css/calcite-maps-esri-leaflet.min-v0.10.css': ['dist/css/calcite-maps-v0.10.css', 'dist/css/layouts/inline-zoom-v0.10.css', 'dist/css/layouts/large-title-v0.10.css', 'dist/css/layouts/small-title-v0.10.css', 'dist/css/support/esri-leaflet-v0.10.css']
+  >>>>>>> als-v0.8-js-4.8
 				}
 			}
 		},
@@ -58,8 +77,13 @@ module.exports = function (grunt) {
 		// 	},
 		// 	dist: {
 		// 		files: {
+  <<<<<<< als-v0.8-js-4.9
 		// 			'dist/js/dojo/calcitemaps-v0.9.js': ['lib/js/dojo/calcitemaps.js'],
 		// 			'dist/js/jquery/calcitemaps-v0.9.js': ['lib/js/jquery/calcitemaps.js']
+  =======
+		// 			'dist/js/dojo/calcitemaps-v0.10.js': ['lib/js/dojo/calcitemaps.js'],
+		// 			'dist/js/jquery/calcitemaps-v0.10.js': ['lib/js/jquery/calcitemaps.js']
+  >>>>>>> als-v0.8-js-4.8
 		// 		}
 		// 	}
 		// },
@@ -72,7 +96,11 @@ module.exports = function (grunt) {
 				src: ['./lib/js/dojo/*.js'],
 				dest:	'./dist/js/dojo/',
 				rename: function(dest, src) {
+  <<<<<<< als-v0.8-js-4.9
           return dest + '/' + src.replace(/.js/, "-v0.9.js");
+  =======
+          return dest + '/' + src.replace(/.js/, "-v0.10.js");
+  >>>>>>> als-v0.8-js-4.8
     		},
 			},
 			calcitemapsjquery: {
@@ -81,7 +109,11 @@ module.exports = function (grunt) {
 				src: ['./lib/js/jquery/*.js'],
 				dest:	'./dist/js/jquery/',
 				rename: function(dest, src) {
+  <<<<<<< als-v0.8-js-4.9
           return dest + '/' + src.replace(/calcitemaps/, "calcitemaps-v0.9");
+  =======
+          return dest + '/' + src.replace(/calcitemaps/, "calcitemaps-v0.10");
+  >>>>>>> als-v0.8-js-4.8
     		},
 			},
 			bootstrapfonts: {
