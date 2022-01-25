@@ -1,4 +1,8 @@
+  <<<<<<< dependabot/npm_and_yarn/node-sass-4.14.1
 NOTE: This project is depreciated and no longer maintained. It is not recommended for future development.
+  =======
+> NOTE: This project is depreciated and is not recommended for future development. It will be replaced with a newer version. Coming soon!
+  >>>>>>> als-v0.8-js-4.8
 
 # Calcite Maps
 A theme for [Bootstrap](https://www.getbootstrap.com) for designing, styling and creating modern map apps.
@@ -78,7 +82,15 @@ This example references Bootstrap, Calcite Maps, ArcGIS and the appropriate JS f
   <link rel="stylesheet" href="https://esri.github.io/calcite-maps/dist/css/calcite-maps-arcgis-4.x.min-v0.10.css">
 
   <!-- ArcGIS JS 4 -->
+  <<<<<<< dependabot/npm_and_yarn/node-sass-4.14.1
   <link rel="stylesheet" href="https://js.arcgis.com/4.10/esri/css/main.css">
+  =======
+  <<<<<<< als-v0.8-js-4.9
+  <link rel="stylesheet" href="https://js.arcgis.com/4.9/esri/css/main.css">
+  =======
+  <link rel="stylesheet" href="https://js.arcgis.com/4.10/esri/css/main.css">
+  >>>>>>> als-v0.8-js-4.8
+  >>>>>>> als-v0.8-js-4.8
 
   <style>
     html,
@@ -193,7 +205,15 @@ This example references Bootstrap, Calcite Maps, ArcGIS and the appropriate JS f
   </script>
 
   <!-- ArcGIS JS 4 -->
+  <<<<<<< dependabot/npm_and_yarn/node-sass-4.14.1
   <script src="https://js.arcgis.com/4.10/"></script>
+  =======
+  <<<<<<< als-v0.8-js-4.9
+  <script src="https://js.arcgis.com/4.9/"></script>
+  =======
+  <script src="https://js.arcgis.com/4.10/"></script>
+  >>>>>>> als-v0.8-js-4.8
+  >>>>>>> als-v0.8-js-4.8
 
   <script>
     
@@ -217,9 +237,21 @@ This example references Bootstrap, Calcite Maps, ArcGIS and the appropriate JS f
       "bootstrap/Dropdown",
 
       // Calcite Maps
+  <<<<<<< dependabot/npm_and_yarn/node-sass-4.14.1
       "calcite-maps/calcitemaps-v0.10",
       // Calcite Maps ArcGIS Support
       "calcite-maps/calcitemaps-arcgis-support-v0.10",
+  =======
+  <<<<<<< als-v0.8-js-4.9
+      "calcite-maps/calcitemaps-v0.9",
+      // Calcite Maps ArcGIS Support
+      "calcite-maps/calcitemaps-arcgis-support-v0.9",
+  =======
+      "calcite-maps/calcitemaps-v0.10",
+      // Calcite Maps ArcGIS Support
+      "calcite-maps/calcitemaps-arcgis-support-v0.10",
+  >>>>>>> als-v0.8-js-4.8
+  >>>>>>> als-v0.8-js-4.8
 
       "dojo/domReady!"
     ], function(WebMap, MapView, Home, Zoom, Compass, Search, Legend, BasemapToggle, ScaleBar, Attribution,Collapse, Dropdown, CalciteMaps, CalciteMapArcGISSupport) {
