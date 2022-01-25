@@ -119,44 +119,46 @@ define([
         return;
       }
 
-      function setExpanded(e, expand) {
-        var searchExpander = query(".calcite-search-expander .esri-search");
-        if (searchExpander && searchExpander.length > 0) {
-          if (expand) {
-            query(searchExpander[0]).addClass("calcite-search-expanded");
-            search._expanded = true;
-          } else {
-            query(searchExpander[0]).removeClass("calcite-search-expanded");
-            search._expanded = false;
-          }
-        }            
-      }
-      
-      // Set-up handlers 
-      var handle = query(".calcite-search-expander").on("click", function(e) {
+      var handle = query(".calcite-search-expander").on("click", function() {
         if (!this.searchEventsSet) {
-          
-          // Initial expand
-          setExpanded(e, true);
+          function setExpanded() {
+            var search = query(".calcite-search-expander .esri-search");
+            if (search && search.length > 0) {
+              search.toggleClass("calcite-search-expanded");
+            }            
+          }
+          setExpanded();  // expand
 
-          // Expand search
+          // Expand when search container or child element has focus
           query(".calcite-search-expander .esri-search__submit-button").on("click", function(e){
-            if (!search._expanded) {
-              setExpanded(e, true);
-            }
+            setExpanded();
           }.bind(this));
 
-          // Collapse search
-          search.view.on("immediate-click", function(e){
-            if (search._expanded) {
-              setExpanded(e, false);
-            }
+          // Dismiss expanded search when li menu is clicked
+          query(".calcite-search-expander .esri-search__suggestions-menu").on("click", function(e){
+            query(".calcite-search-expander .esri-search__container").removeClass("esri-search--loading");
+            query(".calcite-search-expanded").removeClass("calcite-search-expanded");
           });
-
           this.searchEventsSet = true;
           handle.remove();
         }
       }.bind(this));
+           
+      // Hide search loading indicator
+      search.on(["search-start","search-complete","select-result"], function(e){
+        query(".calcite-search-expander .esri-search__container").removeClass("esri-search--loading");
+      }); 
+
+      // Dismiss expanded search when ui is clicked
+      query(window).on("click", function (e) {
+        var searchClicked = query(e.target).closest(".calcite-search-expanded")[0];
+        var searchExpanded = query(".calcite-search-expanded");
+        if (!searchClicked && searchExpanded.length > 0) {
+          query(".calcite-search-expander .esri-search__container").removeClass("esri-search--loading");
+          query(".calcite-search-expanded").removeClass("calcite-search-expanded");
+        }
+      });
+
     }
 
   });

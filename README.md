@@ -1,3 +1,5 @@
+> NOTE: This project is depreciated and is not recommended for future development. It will be replaced with a newer version. Coming soon!
+
 # Calcite Maps
 A theme for [Bootstrap](https://www.getbootstrap.com) for designing, styling and creating modern map apps.
 
@@ -22,7 +24,7 @@ To see what types of apps you can build check out the [live samples here](https:
 * Support for [ArcGIS JS 3.x](https://developers.arcgis.com/javascript/), [ArcGIS JS 4.x](https://developers.arcgis.com/javascript/) and [Esri Leaflet](https://github.com/Esri/esri-leaflet)
 * Dojo and jQuery support
 
-NOTE: The framework is compatile with standard or custom builds of [Bootstrap 3.x](https://www.getbootstrap.com).
+NOTE: The framework is compatible with standard or custom builds of [Bootstrap 3.x](https://www.getbootstrap.com).
 
 ## Getting started
 
@@ -37,10 +39,10 @@ Here's a few ways to get started:
  Run the commands below:
 
  * Run `npm install` (node_modules/bootstrap)
- * Run `bower install` (bower_components/dojo-bootstrap - optional)
+ * Run `bower install` (bower_components/dojo-bootstrap - optional, it's local)
  * Run `grunt` (build out project to ./dist/**)
 
- NOTE: To start customizing, check out the [gruntfile.js](gruntfile.js), [build.scss](./lib/sass/build.scss) and [_variables.scss](./lib/sass/_variables.scss) files.
+ NOTE: To start customizing, check out the [gruntfile.js](gruntfile.js), [build.scss](./lib/sass/build.scss) and [_variables.scss](./lib/sass/_variables.scss) files. You can also create a custom (smaller) build of bootstrap with [build-calicte-maps-bootstrap.scss](./lib/sass/build-calicte-maps-bootstrap.scss) by adding/removing components.
 
 ## Example
 
@@ -70,13 +72,13 @@ This example references Bootstrap, Calcite Maps, ArcGIS and the appropriate JS f
   <title>ArcGIS JS v4, Calcite Maps and Bootstrap Example</title>
 
   <!-- Calcite Maps Bootstrap -->
-  <link rel="stylesheet" href="https://esri.github.io/calcite-maps/dist/css/calcite-maps-bootstrap.min-v0.8.css">
+  <link rel="stylesheet" href="https://esri.github.io/calcite-maps/dist/css/calcite-maps-bootstrap.min-v0.10.css">
   
   <!-- Calcite Maps -->
-  <link rel="stylesheet" href="https://esri.github.io/calcite-maps/dist/css/calcite-maps-arcgis-4.x.min-v0.8.css">
+  <link rel="stylesheet" href="https://esri.github.io/calcite-maps/dist/css/calcite-maps-arcgis-4.x.min-v0.10.css">
 
   <!-- ArcGIS JS 4 -->
-  <link rel="stylesheet" href="https://js.arcgis.com/4.8/esri/css/main.css">
+  <link rel="stylesheet" href="https://js.arcgis.com/4.10/esri/css/main.css">
 
   <style>
     html,
@@ -191,7 +193,7 @@ This example references Bootstrap, Calcite Maps, ArcGIS and the appropriate JS f
   </script>
 
   <!-- ArcGIS JS 4 -->
-  <script src="https://js.arcgis.com/4.8/"></script>
+  <script src="https://js.arcgis.com/4.10/"></script>
 
   <script>
     
@@ -215,9 +217,9 @@ This example references Bootstrap, Calcite Maps, ArcGIS and the appropriate JS f
       "bootstrap/Dropdown",
 
       // Calcite Maps
-      "calcite-maps/calcitemaps-v0.8",
+      "calcite-maps/calcitemaps-v0.10",
       // Calcite Maps ArcGIS Support
-      "calcite-maps/calcitemaps-arcgis-support-v0.8",
+      "calcite-maps/calcitemaps-arcgis-support-v0.10",
 
       "dojo/domReady!"
     ], function(WebMap, MapView, Home, Zoom, Compass, Search, Legend, BasemapToggle, ScaleBar, Attribution,Collapse, Dropdown, CalciteMaps, CalciteMapArcGISSupport) {
